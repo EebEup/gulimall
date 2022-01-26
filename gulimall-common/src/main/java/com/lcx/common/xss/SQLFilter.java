@@ -8,7 +8,8 @@
 
 package com.lcx.common.xss;
 
-import io.renren.common.exception.RRException;
+import com.lcx.common.utils.RRException;
+
 import org.apache.commons.lang.StringUtils;
 
 /**
