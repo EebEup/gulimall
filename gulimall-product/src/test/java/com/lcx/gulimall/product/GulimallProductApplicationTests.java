@@ -1,11 +1,33 @@
 package com.lcx.gulimall.product;
 
 import com.lcx.gulimall.product.entity.BrandEntity;
+import com.lcx.gulimall.product.entity.CategoryEntity;
 import com.lcx.gulimall.product.service.BrandService;
-import org.junit.jupiter.api.Test;
+import com.lcx.gulimall.product.service.CategoryService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+
+/**
+ * 1、引入oss-starter
+ * 2、配置key，endpoint相关信息即可
+ * 3、使用OSSClient 进行相关操作
+ */
+@Slf4j
+@RunWith(SpringRunner.class)
 @SpringBootTest
 class GulimallProductApplicationTests {
 
